@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 .hide {
-    display: none;
+  display: none;
 }
 
 /* h1, 
@@ -11,21 +11,21 @@ h3 {
 } */
 
 p {
-   @apply text-slate-600;
-   line-height: 1.7;
-   /* font-size: 18px; */
+  @apply text-slate-600;
+  line-height: 1.7;
+  /* font-size: 18px; */
 }
 
 .input-group-error {
-   padding: 2px;
-   background-color: rgb(241, 29, 50);
-   border-radius: 5px;
+  padding: 2px;
+  background-color: rgb(241, 29, 50);
+  border-radius: 5px;
 }
 
 .submit-button-error {
-   color: rgb(241, 29, 50);
-   background-color: white;
-   border: 2px solid rgb(241, 29, 50);
+  color: rgb(241, 29, 50);
+  background-color: white;
+  border: 2px solid rgb(241, 29, 50);
 }
 
 /* @media (max-width: 320px) {
