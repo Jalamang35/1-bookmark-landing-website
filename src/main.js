@@ -1,19 +1,19 @@
 import "./style.css";
 
 document.addEventListener("DOMContentLoaded", () => {
-  const hamburgarIcon = document.querySelector("#hamburgar-icon");
+  const hamburgerIcon = document.querySelector("#hamburger-icon");
   const desktopLogo = document.querySelector("#desktop-logo");
   const mobileMenu = document.querySelector("#mobile-menu");
   const closeIcon = document.querySelector("#close-icon");
 
-  hamburgarIcon.addEventListener("click", () => {
-    hamburgarIcon.classList.add("hidden");
+  hamburgerIcon.addEventListener("click", () => {
+    hamburgerIcon.classList.add("hidden");
     desktopLogo.classList.add("hidden");
     mobileMenu.classList.remove("hide");
   });
 
   closeIcon.addEventListener("click", () => {
-    hamburgarIcon.classList.remove("hidden");
+    hamburgerIcon.classList.remove("hidden");
     desktopLogo.classList.remove("hidden");
     mobileMenu.classList.add("hide");
   });
@@ -88,7 +88,6 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!emailValue || !isValidEmail) {
       emailInput.value = "";
       emailInput.placeholder = "example@email/com";
-      // placeholder.style.cssText = `font-weight: bolder; color: black;`
       submitButton.classList.add("submit-button-error");
       emailError.classList.remove("hide");
       emailInputGroup.classList.add("input-group-error");
