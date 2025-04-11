@@ -1,3 +1,5 @@
+import "./style.css";
+
 document.addEventListener("DOMContentLoaded", () => {
   const hamburgarIcon = document.querySelector("#hamburgar-icon");
   const desktopLogo = document.querySelector("#desktop-logo");
