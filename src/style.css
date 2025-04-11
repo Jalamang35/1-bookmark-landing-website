@@ -1,0 +1,163 @@
+@import "tailwindcss";
+
+.hide {
+    display: none;
+}
+
+/* h1, 
+h2, 
+h3 {
+    @apply text-slate-800 font-bold;
+} */
+
+p {
+   @apply text-slate-600;
+   line-height: 1.7;
+   /* font-size: 18px; */
+}
+
+.input-group-error {
+   padding: 2px;
+   background-color: rgb(241, 29, 50);
+   border-radius: 5px;
+}
+
+.submit-button-error {
+   color: rgb(241, 29, 50);
+   background-color: white;
+   border: 2px solid rgb(241, 29, 50);
+}
+
+/* @media (max-width: 320px) {
+   .navigation {
+      padding-right: 15px;
+      padding-left: 15px;
+   }
+   .mobile-sm {
+      display: none;
+   }
+   .hamburger {
+      display: block;
+   }
+   .simple {
+      font-size: 25px;
+   }
+   .book-manager-para {
+      width: 100%;
+      font-size: 16px;
+      padding: 0 10px;
+   }
+   .feature-p {
+      width: 100%;
+      font-size: 16px;
+      padding: 0 15px;
+   }
+   .bookmark-cont {
+      padding-left: 10px;
+      padding-right: 10px;
+   }
+   .bookmark-cont-h2 {
+      font-size: 22px;
+   }
+   .bookmark-cont-p {
+      width: 92%;
+      font-size: 14px;
+   }
+   .bookmark-click-bg {
+     width: 80%;
+   }
+   .faqs-container h4 {
+      font-size: 12px;
+   }
+   .faqs-container p {
+      font-size: 12px;
+   }
+} */
+
+/* @media (max-width: 375px) {
+   .navigation {
+      padding-right: 15px;
+      padding-left: 15px;
+   }
+   .mobile-sm {
+      display: none;
+   }
+   .hamburger {
+      display: block;
+   }
+   .book-manager-para {
+      width: 88%;
+      font-size: 16px;
+      padding: 0 10px;
+   }
+   .bookmark-click-bg {
+      width: 80%;
+   }
+   .faqs-container h4 {
+      font-size: 14px;
+   }
+   .faqs-container p {
+      font-size: 14px;
+   }
+} */
+
+/* @media (max-width: 425px) {
+   .navigation {
+      padding-right: 15px;
+      padding-left: 15px;
+   }
+   .mobile-sm {
+      display: none;
+   }
+   .hamburger {
+      display: block;
+   }
+   #active-indicator {
+      width: 20%;
+   } 
+    p {
+      font-size: 16px;
+    }
+   .book-manager-para {
+      width: 88%;
+      font-size: 16px;
+      padding: 0 10px;
+   }
+   .bookmark-click-bg {
+      width: 80%;
+   }
+   .faqs-container h4 {
+      font-size: 16px;
+   }
+   .faqs-container p {
+      font-size: 16px;
+   }
+   #tabs {
+      border-bottom: none;
+   }
+} */
+
+/* @media (max-width: 768px) {
+   .navigation {
+      padding-right: 15px;
+      padding-left: 15px;
+   }
+   .hamburger {
+      display: block;
+   }
+   .bookmark-click-bg {
+      width: 80%;
+   }
+} */
+
+/* @media (max-width: 1024px) {
+   .hamburger {
+      display: none;
+   }
+} */
+
+/* @media (max-width: 1440px) {
+   .hamburger {
+      display: none;
+   }
+} */
