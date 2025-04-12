@@ -1,6 +1,5 @@
-import "./style.css";
-
 document.addEventListener("DOMContentLoaded", () => {
+  // HAMBURGER AND CLOSE MENU SECTION
   const hamburgerIcon = document.querySelector("#hamburger-icon");
   const desktopLogo = document.querySelector("#desktop-logo");
   const mobileMenu = document.querySelector("#mobile-menu");
@@ -21,34 +20,28 @@ document.addEventListener("DOMContentLoaded", () => {
   // TABS AND ACTIVE INDICATOR MANIPULATION SECTION
   const tabs = document.querySelectorAll(".feature-tab");
   const sections = document.querySelectorAll(".feature-section");
-  const activeIndicator = document.getElementById("active-indicator");
+
+  const simpleIndicator = document.querySelector("#simple-indicator");
+  const speedyIndicator = document.querySelector("#speedy-indicator");
+  const easyIndicator = document.querySelector("#easy-indicator");
+
+  const indicators = {
+    "simple-bookmark-section": simpleIndicator,
+    "intelligent-search-section": speedyIndicator,
+    "share-bookmark-section": easyIndicator,
+  };
 
   tabs.forEach((tab, index) => {
     tab.addEventListener("click", function () {
       sections.forEach((section) => section.classList.add("hide"));
       sections[index].classList.remove("hide");
 
-      if (window.innerWidth >= 768) {
-        // Large screen (horizontal tabs)
-        activeIndicator.style.cssText = `
-          left: ${this.offsetLeft}px;
-          top: auto;
-          width: ${this.offsetWidth}px;
-          height: 2px;
-          transform: translateY(0);
-        `;
-      } else {
-        // Small screen (vertical tabs)
-        const offsetTop =
-          this.parentElement.offsetTop + this.offsetTop + this.offsetHeight;
-        activeIndicator.style.cssText = `
-          left: 30%;
-          top: ${this.offsetTop + this.offsetHeight}px;
-          width: 40%;
-          height: 4px;
-          transform: translateY(-4px);
-        `;
-      }
+      Object.values(indicators).forEach((indicator) =>
+        indicator.classList.add("hide")
+      );
+
+      const target = tab.getAttribute("data-target");
+      indicators[target].classList.remove("hide");
     });
   });
 
@@ -106,30 +99,3 @@ document.addEventListener("DOMContentLoaded", () => {
     emailInputGroup.classList.remove("input-group-error");
   });
 });
-// HAMBURGER AND CLOSE MENU SECTION
-
-// export default app;
-
-// import javascriptLogo from './javascript.svg'
-// import viteLogo from '/vite.svg'
-// import { setupCounter } from './counter.js'
-
-// document.querySelector('#app').innerHTML = `
-//   <div>
-//     <a href="https://vite.dev" target="_blank">
-//       <img src="${viteLogo}" class="logo" alt="Vite logo" />
-//     </a>
-//     <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-//       <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-//     </a>
-//     <h1>Hello Vite!</h1>
-//     <div class="card">
-//       <button id="counter" type="button"></button>
-//     </div>
-//     <p class="read-the-docs">
-//       Click on the Vite logo to learn more
-//     </p>
-//   </div>
-// `
-
-// setupCounter(document.querySelector('#counter'))

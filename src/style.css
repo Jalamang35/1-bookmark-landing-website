@@ -4,16 +4,9 @@
   display: none;
 }
 
-/* h1, 
-h2, 
-h3 {
-    @apply text-slate-800 font-bold;
-} */
-
 p {
   @apply text-slate-600;
   line-height: 1.7;
-  /* font-size: 18px; */
 }
 
 .input-group-error {
@@ -31,5 +24,8 @@ p {
 @media (max-width: 320px) {
   p {
     font-size: 14px;
+  }
+  .feature-para {
+    padding: 0 30px;
   }
 }
